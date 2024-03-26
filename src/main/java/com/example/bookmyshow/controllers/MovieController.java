@@ -8,7 +8,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-//@RequestMapping("/movie")
 @AllArgsConstructor
 @RequestMapping("/movie")
 public class MovieController {
@@ -18,7 +17,7 @@ public class MovieController {
     public Movie getMovie(@PathVariable Long id){
         return movieService.getMovie(id);
     }
-    @PostMapping
+    @PostMapping("/create")
     public Movie createMovie(@RequestBody CreateMovieDTO createMovieDTO){
         //validate - movie name mandotary
         validate(createMovieDTO);

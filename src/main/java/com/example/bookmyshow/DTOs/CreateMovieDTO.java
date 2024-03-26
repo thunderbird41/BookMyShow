@@ -17,11 +17,6 @@ import java.util.List;
 public class CreateMovieDTO {
     private String name;
     private Double rating;
-
     private List<Languages> languages = new ArrayList<>();
-
     private List<MovieFeature> movieFeatures = new ArrayList<>();
-
-    // @OneToMany(mappedBy = "movie")
-    private List<Show> shows = new ArrayList<>();
 }

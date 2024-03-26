@@ -14,6 +14,6 @@ import lombok.Setter;
 @NoArgsConstructor
 
 public class User extends BaseModel {
-    private String userName;
+    private String username;
     private String password;
 }

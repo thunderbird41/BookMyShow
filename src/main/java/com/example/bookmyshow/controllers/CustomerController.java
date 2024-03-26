@@ -22,7 +22,7 @@ public class CustomerController {
     }
 
     // create customer
-    @PostMapping("/customer")
+    @PostMapping("/create")
     public Customer createCustomer(@RequestBody CustomerDTO customerDTO){
         validate(customerDTO);
         return customerService.createCustomer(customerDTO);

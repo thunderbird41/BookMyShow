@@ -33,7 +33,7 @@ public class CustomerService {
         }
 
         //create a user
-        User user1 = user.createUser(customerDTO.getUsername(), customerDTO.getPassword());
+        User newUser = user.createUser(customerDTO.getUsername(), customerDTO.getPassword());
 
         //create a customer
         Customer customer = Customer.builder()
@@ -41,7 +41,7 @@ public class CustomerService {
                 .phoneNumber(customerDTO.getPhoneNumber())
                 .email(customerDTO.getEmail())
                 .fullName(customerDTO.getFullName())
-                .user(user1)
+                .user(newUser)
                 .build();
 
         return customerRepository.save(customer);

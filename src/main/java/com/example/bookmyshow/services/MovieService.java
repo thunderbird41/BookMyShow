@@ -7,7 +7,7 @@ import com.example.bookmyshow.models.Movie;
 import com.example.bookmyshow.repository.MovieRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
+import java.util.NoSuchElementException;
 
 import java.util.Optional;
 

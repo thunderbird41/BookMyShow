@@ -17,7 +17,7 @@ public class ShowController {
         return showService.getShow(id);
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public Show createShow(@RequestBody CreateShowDTO createShow){
         return showService.createShow(createShow);
     }
